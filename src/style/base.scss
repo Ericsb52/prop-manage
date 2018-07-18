@@ -15,3 +15,20 @@ body{
     font-weight: 400;
     color: $color-grey-4D;
 }
+
+.app-wrapper{
+
+    height: $page-height;
+    width: $page-width;
+
+    display: grid;
+    grid-template-rows: [page-s head-s] 13.6rem [head-e bar-s] 4rem [bar-e content-s] 1fr [content-e page-e];
+    grid-template-columns: [page-s] 14rem [content-s] 1fr [content-e] 14rem [page-e]
+}
+
+.bar{
+    height: 4rem;
+    background-color: $color-grey-D8;
+    grid-row: bar-s/bar-e;
+    grid-column: page-s/page-e;
+}

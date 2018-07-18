@@ -1,10 +1,16 @@
 .header-wrapper{
-    // grid
+
+    //component layout
+    grid-row: head-s/head/e;
+    grid-column: content-s/content-e;
+
+
+    // self grid
     display: grid;
     grid-template-columns: [s] 1fr [e];
     grid-template-rows: [title-s] 3rem [title-e sub-s] 2rem [sub-e];
 
-    // styles
+    // self styles
 
     padding-top: 4rem;
 
