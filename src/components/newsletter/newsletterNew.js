@@ -4,16 +4,17 @@ import NewNewsletterForm from './newsletterNewForm';
 
 class NewNewsletter extends Component {
 
-    onSubmit = (fields, button) => {
+    onSubmit = (fields) => {
         console.log("submit");
         // if(button == 'submit'){
         //     console.log('trying to handle submit')
         // }
-        // this.props.hisstory.push('/dashboard')
+        console.log("submit");
+        this.props.history.push('/dashboard');
     }
     onCancel = () => {
         console.log("cancel");
-
+        this.props.history.push('/dashboard');
     }
     render() {
         return (
